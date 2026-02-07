@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>OSAS Web App</title>
+
+    <link rel="icon" href="media/ISATU logo.jpg" type="image/png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        color: black;
+        background-color: #F2F2F2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 80vh;
+        text-align: center;
+        padding: 18px;
+        animation: fadeUp 1.2s ease-out forwards;
+    }
+
+    img {
+        width: 30vh;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        font-weight: lighter;
+        padding: 10px 10px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    a {
+        display: inline-block;
+        padding: 12px 30px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        color: #fff;
+        background: #2575fc;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: 0.3s;
+
+    }
+
+    a:hover {
+        background: #2575fc;
+        transform: translateY(-4px);
+    }
+
+    @keyframes fadeUp {
+        from {
+            opacity: 0;
+            transform: translateY(25px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 480px) {
+
+        /* Mobile phones */
+        img {
+            width: 90px;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+        }
+
+        h3 {
+            font-size: 1rem;
+            padding: 6px 12px;
+            margin-bottom: 20px;
+        }
+
+        a {
+            padding: 10px 20px;
+            font-size: 0.9rem;
+        }
+    }
+
+    @media (min-width: 481px) and (max-width: 768px) {
+
+        /* Tablets */
+        img {
+            width: 100px;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            padding: 7px 15px;
+            margin-bottom: 20px;
+        }
+
+        a {
+            padding: 11px 25px;
+            font-size: 0.95rem;
+        }
+    }
+
+    @media (min-width: 769px) and (max-width: 1200px) {
+
+        /* Laptops */
+        img {
+            width: 120px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            padding: 8px 20px;
+            margin-bottom: 20px;
+
+        }
+
+        a {
+            padding: 12px 30px;
+            font-size: 1rem;
+        }
+    }
+
+    @media (min-width: 1201px) {
+
+        /* Large screens / TV */
+        img {
+            width: 150px;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            padding: 12px 30px;
+        }
+
+        a {
+            padding: 14px 40px;
+            font-size: 1.2rem;
+        }
+    }
+</style>
+
+<body>
+    <div class="landing">
+        <img src="media/logo.png" class="logo">
+        <h1>Office of the Student Affairs and Services</h1>
+        <h3>Appointment & Queue Management System</h3>
+        <a href="login.php" class="btn">Start Here</a>
+    </div>
+
+</body>
+
+
+</html>
